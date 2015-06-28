@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+img{
+    padding: 10px 10px 10px 0px;
+}
+
+.pixRight{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+.pixLeft{
+    float: left;
+    margin: 0 5px 5px 0;
+}
+header{
+    color: #900;
+    font-size: 24px;
+}
+body{
+    font-size: 12px;
+}
