@@ -6,6 +6,7 @@
  * Time: 12:32
  */
 
+include_once("CloneMe.php");
 class Person extends CloneMe {
     public function __construct()
     {
