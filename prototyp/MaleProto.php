@@ -5,7 +5,7 @@
  * Date: 04.07.15
  * Time: 12:52
  */
-include_once("Prototype.php");
+include_once("IPrototype.php");
 
 class MaleProto extends Prototype{
     const gender="SAMIEC";
