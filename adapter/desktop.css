@@ -1,0 +1,18 @@
+@media only screen and (min-device-width : 800px) {
+    body{
+        color: #1d2326;
+        font-size: 12px;
+        background-color: #dddcc5;
+    }
+    h1{
+        font-size: 24px;
+        color: #611427;
+    }
+    .pixRight{
+        float: right;
+        margin: 0 0 5px 5px;
+    }
+    image{
+        padding: 10px 10px 10px 0;
+    }
+}

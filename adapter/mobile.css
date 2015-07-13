@@ -1,0 +1,17 @@
+@media only screen and (max-device-width : 960px) {
+    img{
+        max-width: 100%;
+    }
+    body{
+        color: #1D2326;
+        font-size: 24px;
+        background-color: #dddcc5;
+    }
+    h1{
+        font-size: 48px;
+        color: #611427;
+    }
+    image{
+        padding: 5px 5px 5px 0;
+    }
+}

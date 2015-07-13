@@ -2,33 +2,33 @@
 /**
  * Created by PhpStorm.
  * User: bartek
- * Date: 11.07.15
- * Time: 19:39
+ * Date: 13.07.15
+ * Time: 20:52
  */
 
-include_once("IFormat.php");
+include_once("IMobileFormat.php");
 
-class Desktop implements IFormat{
+class Mobile implements IMobileFormat{
     private $head="<!doctype html><html><head>";
     private $headClose="<meta charset='UTF-8'>
-            <title>Komputery osobiste</title>";
+            <title>Komputery mobilne</title>";
     private $cap = "</body></html>";
     private $sampleText;
 
     public function formatCSS()
     {
         echo $this->head;
-        echo "<link rel='stylesheet' href='desktop.css'>";
+        echo "<link rel='stylesheet' href='mobile.css'>";
         echo $this->headClose;
         echo "<h1>Witajcie wszyscy!</h1>";
     }
 
     public function formatGraphics()
     {
-        echo "<img class='pixRight' src='https://phayemuss.files.wordpress.com/2009/09/p9290055.jpg' width='720' height='480' alt='river' />";
+        echo "<img class='pixRight' src='http://upload.wikimedia.org/wikipedia/commons/1/1e/Starkes_Ferry_Ocklawaha_River_north01.jpg' width=device-width height=device-height alt='river' />";
     }
 
-    public function horizontalLayout()
+    public function verticalLayout()
     {
         $textFile = "lorem.txt";
         $openText = fopen($textFile, 'r');
