@@ -6,6 +6,9 @@
  * Time: 09:53
  */
 
-class Icomponent {
+abstract class IComponent {
+    protected $site;
+    abstract public function getSite();
+    abstract public function getPrice();
 
 } 
