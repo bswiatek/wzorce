@@ -6,7 +6,7 @@
  * Time: 21:21
  */
 
-namespace dates;
+
 
 
 abstract class Decorator extends IComponent{

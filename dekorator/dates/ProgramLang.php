@@ -6,7 +6,6 @@
  * Time: 21:31
  */
 
-namespace dates;
 
 
 class ProgramLang extends Decorator{

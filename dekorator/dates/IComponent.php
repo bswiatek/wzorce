@@ -6,10 +6,10 @@
  * Time: 20:58
  */
 
-namespace dates;
 
 
-class IComponent {
+
+abstract class IComponent {
     protected $date;
     protected $ageGroup;
     protected $feature;

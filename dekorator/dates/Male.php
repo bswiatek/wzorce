@@ -6,7 +6,7 @@
  * Time: 21:01
  */
 
-namespace dates;
+
 
 
 class Male extends IComponent{
