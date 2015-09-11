@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zambezi Trading Post</title>
+</head>
+<body>
+    <img src="http://www.traveltourismblog.com/images/Zambezi-River-victoria-large-photo.jpg" alt="zam" />
+    <h1>Sprzedawcy przygody</h1>
+
+    <form action="Client.php" method="post">
+        <h2>Sprzęt</h2>
+        <h3>Nawigacja</h3>
+        <h4>GPS</h4>
+        <input type="radio" name="gps" value="98"> Curiosity 98 zł &nbsp;
+        <input type="radio" name="gps" value="112"> Cabot 112 zł &nbsp;
+        <input type="radio" name="gps" value="127"> Boomer 127 zł &nbsp;
+        <input type="radio" name="gps" value="189"> Livingston 189 zł &nbsp;
+
+        <h4>Mapy</h4>
+        <input type="checkbox" name="map[]" value="20"> Zambia 20zł &nbsp;
+        <input type="checkbox" name="map[]" value="29"> Angola 29zł &nbsp;
+        <input type="checkbox" name="map[]" value="15"> Namibia 15zł &nbsp;
+        <input type="checkbox" name="map[]" value="15"> Bostwana 15zł &nbsp;
+        <input type="checkbox" name="map[]" value="30"> Zimbabwe 30zł &nbsp;
+        <input type="checkbox" name="map[]" value="27"> Mozambik 27zł &nbsp;
+
+        <h2>Łódź rzeczna (wynajem)</h2>
+        <input type="radio" name="boat" value="55"> Kajak 55 zł <br/>
+        <input type="radio" name="boat" value="125"> Canoe 125 zł <br/>
+        <input type="radio" name="boat" value="250"> Zodiac 250 zł <br/>
+        <input type="radio" name="boat" value="495"> Łódź parowa 495 zł <br/>
+
+        <input type="submit" name="sender" value="Wyślij zamówienie">
+    </form>
+</body>
+</html>
