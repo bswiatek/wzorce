@@ -3,7 +3,7 @@
 /**
  * Created by bswiatek on 11.09.15.
  */
-class OffState implements IState
+class BrightestState implements IState
 {
     private $context;
 
@@ -14,13 +14,13 @@ class OffState implements IState
 
     public function turnLightOn()
     {
-        echo "Wlaczone!<br>";
-        $this->context->setState($this->context->getOnState());
+        echo "zonk<br>";
     }
 
     public function turnLightOff()
     {
-        echo "zonk<br>";
+        echo "Wylaczone!<br>";
+        $this->context->setState($this->context->getOffState());
     }
 
     public function turnBrighter()

@@ -15,9 +15,10 @@ class Client
     {
         $this->context = new Context();
         $this->context->turnOnLight();
-        $this->context->turnOnLight();
+        $this->context->turnBrighterLight();
+        $this->context->turnBrightestLight();
         $this->context->turnOffLight();
-        $this->context->turnOffLight();
+        $this->context->turnBrighterLight();
     }
 
 }

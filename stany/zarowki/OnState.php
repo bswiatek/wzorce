@@ -14,12 +14,22 @@ class OnState implements IState
 
     public function turnLightOn()
     {
-        echo "Swiatlo jest juz wlaczone -> nic nie rob<br>";
+        echo "zonk<br>";
     }
 
     public function turnLightOff()
     {
-        echo "Wylaczyc swiatla!<br>";
-        $this->context->setState($this->context->getOffState());
+        echo "zonk<br>";
+    }
+
+    public function turnBrighter()
+    {
+        echo "Jasniejsze<br>";
+        $this->context->setState($this->context->getBrighterState());
+    }
+
+    public function turnBrightest()
+    {
+        echo "zonk<br>";
     }
 }
