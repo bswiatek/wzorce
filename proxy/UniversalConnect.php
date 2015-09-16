@@ -19,7 +19,6 @@ class UniversalConnect implements IConnectInfo
 
         if (self::$hookup)
         {
-            echo "polaczenie udane";
         } elseif (mysqli_connect_error(self::$hookup))
         {
             echo('Oto blad: '. mysqli_connect_error());
