@@ -5,10 +5,29 @@
  */
 class UpdateData implements IStrategy
 {
-    public function algorithm()
+    private $tableMaster;
+    private $dataPack;
+    private $hookup;
+    private $sql;
+
+    public function algorithm(Array $dataPack)
     {
-        $hookup=UniversalConnect::doConnect();
-        $test = $hookup->real_escape_string($_POST['data']);
-        echo "Następujące dane zostały zaktualizowane: " .$test . "<br>";
+        $this->tableMaster = IStrategy::TABLENOW;
+        $this->hookup = UniversalConnect::doConnect();
+        $this->dataPack = $dataPack;
+        $changeField = $this->dataPack[0];
+        $oldData = $this->dataPack[1];
+        $newData = $this->dataPack[2];
+
+        $this->sql = "UPDATE $this->tableMaster SET $changeField='$newData' WHERE $changeField='$oldData'";
+
+        if($result = $this->hookup->query($this->sql))
+        {
+            echo "$changeField zmienione z $oldData na $newData";
+        }
+        else
+        {
+            "zmiana nieudana: " . $this->hookup->error;
+        }
     }
 }

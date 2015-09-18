@@ -5,10 +5,28 @@
  */
 class DeleteRecord implements IStrategy
 {
-    public function algorithm()
+    private $tableMaster;
+    private $dataPack;
+    private $hookup;
+    private $sql;
+
+    public function algorithm(Array $dataPack)
     {
-        $hookup=UniversalConnect::doConnect();
-        $test = $hookup->real_escape_string($_POST['data']);
-        echo "Usunięto: " .$test . "<br>";
+        $this->tableMaster = IStrategy::TABLENOW;
+        $this->hookup = UniversalConnect::doConnect();
+        $this->dataPack = $dataPack;
+        $destroy = $this->dataPack[0];
+        $destroy = intval($destroy);
+
+        $this->sql = "DELETE FROM $this->tableMaster WHERE id='$destroy'";
+
+        if($result = $this->hookup->query($this->sql))
+        {
+            echo "Rekord #$destroy został usunięty z tabeli $this->tableMaster";
+        }
+        else
+        {
+            "Usunięcie nieudane: " . $this->hookup->error;
+        }
     }
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modul administratora</title>
+</head>
+<body>
+    <h2>Moduł administracyjny</h2>
+
+    <form name="allData" action="displayTrigger.php" method="post">
+        <h3>Wyświetl dane</h3>
+        <input type="submit" value="Wyświetl dane" name="display">
+    </form>
+
+    <form name="search" action="findTrigger.php" method="post">
+        <h3>Wyszukiwanie</h3>
+        <input type="radio" name="field" value="id"> ID<br>
+        <input type="radio" name="field" value="company"> Firma<br>
+        <input type="radio" name="field" value="devdes"> Projektant/Programista<br>
+        <input type="radio" name="field" value="lang"> Język<br>
+        <input type="radio" name="field" value="plat"> Platforma<br>
+        <input type="radio" name="field" value="style"> Styl<br>
+        <input type="radio" name="field" value="device"> Urządzenie<br>
+        <input type="text" name="term"> Szukana fraza<br>
+        <input type="submit" value="Szukaj" name="searcher">
+    </form>
+
+    <form name="search" action="updateTrigger.php" method="post">
+        <h3>Zmień pole</h3>
+        <input type="radio" name="update" value="id"> ID<br>
+        <input type="radio" name="update" value="company"> Firma<br>
+        <input type="radio" name="update" value="devdes"> Projektant/Programista<br>
+        <input type="radio" name="update" value="lang"> Język<br>
+        <input type="radio" name="update" value="plat"> Platforma<br>
+        <input type="radio" name="update" value="style"> Styl<br>
+        <input type="radio" name="update" value="device"> Urządzenie<br>
+        <input type="text" name="old"> Stara wartość<br>
+        <input type="text" name="new"> Nowa wartość<br>
+        <input type="submit" value="Zmień" name="changer">
+    </form>
+
+    <form name="search" action="killTrigger.php" method="post">
+        <h3>Usuń rekord</h3>
+        <input type="text" name="delete"> Nr rekordu do usunięcia<br>
+        <input type="submit" value="Usuń rekord" name="doa">
+    </form>
+</body>
+</html>

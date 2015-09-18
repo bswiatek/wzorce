@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profil programisty</title>
+</head>
+<body>
+    <h2>Ankieta programisty</h2>
+    <form name="survey" action="insertTrigger.php" method="post">
+        <input type="text" name="company"> Nazwa firmy<br>
+
+        <h3>Główna rola</h3>
+        <input type="radio" name="devdes" value="programista"> Programista<br>
+        <input type="radio" name="devdes" value="projektant"> Projektant<br>
+
+        <h3>Preferowany język</h3>
+        <input type="radio" name="lang" value="PHP"> PHP<br>
+        <input type="radio" name="lang" value="C#/ASP.NET"> C# ASP.NET<br>
+        <input type="radio" name="lang" value="PERL"> PERL<br>
+        <input type="radio" name="lang" value="JavaScript"> JavaScript<br>
+        <input type="radio" name="lang" value="ActionScript 3.0"> ActionScript 3.0<br>
+
+        <h3>Platforma</h3>
+        <input type="radio" name="plat" value="WinPC"> Windows<br>
+        <input type="radio" name="plat" value="Mac"> Apple Macintosh<br>
+        <input type="radio" name="plat" value="linux"> Linux<br>
+
+        <h3>Styl</h3>
+        <input type="radio" name="style" value="sekwencyjne"> Sekwencyjne<br>
+        <input type="radio" name="style" value="proceduralne"> Proceduralne<br>
+        <input type="radio" name="style" value="OOP"> Obiektowe<br>
+        <input type="radio" name="style" value="wzorce projektowe"> Wzorce projektowe<br>
+
+        <h3>Platforma</h3>
+        <input type="radio" name="device" value="desktop"> Desktop<br>
+        <input type="radio" name="device" value="tablet"> Tablet<br>
+        <input type="radio" name="device" value="smart phone"> Smart Phone<br>
+        <p/>
+
+        <input type="submit" value="Dodaj profil" name="sender">
+    </form>
+</body>
+</html>
